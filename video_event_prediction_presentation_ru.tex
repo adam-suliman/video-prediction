@@ -288,22 +288,26 @@
     \includegraphics[height=0.78\textheight,keepaspectratio]{quality_efficiency_tradeoff.png}
 \end{frame}
 
-\begin{frame}{Ablation: train prior}
+\begin{frame}{Ablation: статистический prior}
     \centering
-    \includegraphics[height=0.68\textheight,keepaspectratio]{prior_effect_ablation.png}
+    \includegraphics[width=0.9\textwidth,keepaspectratio]{prior_effect_ablation.png}
 
-    \vspace{0.1cm}
-    \small
-    Prior заметно помогает обычному GRU, но для JointGRU основную роль играет action head.
+    \scriptsize
+    \parbox{0.9\textwidth}{
+        Prior заметно помогает обычному GRU: Action@5 растет примерно с 29.2\% до 33.5\%.
+        Для JointGRU результат почти не меняется, потому что совместимость пары уже моделируется action head.
+    }
 \end{frame}
 
 \begin{frame}{Ablation: action-score fusion}
     \centering
-    \includegraphics[height=0.68\textheight,keepaspectratio]{action_score_weight_ablation.png}
+    \includegraphics[width=0.9\textwidth,keepaspectratio]{action_score_weight_ablation.png}
 
-    \vspace{0.1cm}
-    \small
-    Увеличение веса action head улучшает совместное предсказание до \( \gamma=2.0 \), но прирост после \( \gamma=1.0 \) небольшой.
+    \scriptsize
+    \parbox{0.9\textwidth}{
+        Увеличение веса action head дает основной прирост до \( \gamma \approx 1.0 \);
+        дальше качество растет медленнее, но лучший запуск получился при \( \gamma=2.0 \).
+    }
 \end{frame}
 
 \begin{frame}{Качественный пример: validation sample 10}
