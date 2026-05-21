@@ -12,6 +12,7 @@
 \usepackage{booktabs}
 \usepackage{graphicx}
 \usepackage{hyperref}
+\usepackage{qrcode}
 \usepackage{xcolor}
 
 \graphicspath{{results/figures/}{results/raw_video_demo/}}
@@ -377,27 +378,13 @@
 \end{frame}
 
 \begin{frame}{Репозиторий и воспроизводимость}
-    \begin{itemize}
-        \item Основной notebook:
-        \[
-            \texttt{video\_event\_prediction\_rgb\_features\_experiments.ipynb}
-        \]
-        \item VS Code Python notebook:
-        \[
-            \texttt{video\_event\_prediction\_rgb\_features\_experiments.py}
-        \]
-        \item Скрипт графиков:
-        \[
-            \texttt{results/make\_presentation\_figures.py}
-        \]
-        \item Результаты:
-        \[
-            \texttt{results/final\_results\_table.csv}
-        \]
-    \end{itemize}
+    \centering
+    \vspace{0.25cm}
+    \qrcode[height=0.46\textheight]{https://github.com/adam-suliman/video-prediction}
 
-    \vspace{0.2cm}
-    \todo{вставить ссылку на GitHub/Kaggle notebook перед сдачей}
+    \vspace{0.5cm}
+    \Large
+    \href{https://github.com/adam-suliman/video-prediction}{\texttt{github.com/adam-suliman/video-prediction}}
 \end{frame}
 
 \begin{frame}{Итог}
