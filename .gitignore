@@ -1,0 +1,23 @@
+# Ignore everything by default.
+*
+
+# Keep repository control files.
+!.gitignore
+
+# Main deliverables.
+!video_event_prediction_rgb_features_experiments.ipynb
+!video_event_prediction_presentation_ru.tex
+!video_event_prediction_presentation_ru.pdf
+
+# Presentation image assets referenced by the LaTeX source.
+!results/
+results/*
+!results/figures/
+results/figures/*
+!results/figures/main_action_top5_comparison.png
+!results/figures/quality_efficiency_tradeoff.png
+!results/figures/prior_effect_ablation.png
+!results/figures/action_score_weight_ablation.png
+!results/raw_video_demo/
+results/raw_video_demo/*
+!results/raw_video_demo/sample_00010_P01_01.png
